@@ -1,0 +1,44 @@
+#list: ordered collection of different data types
+[0, "Banana", False, 23.0]
+
+#dictionary: unordered collection of data, in key value pairs
+{
+    "firstname":"Hester",
+    "lastname":"Tolkien",
+    "country":"England",
+    "age":17,
+    "hobbies":["Football", "Coding", "DnD", "Flags"]
+}
+
+#tuple: ordered collection of different data types that can't be changed
+("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Neptune", "Pluto")
+
+#set: collection of data types, doesn't need to be ordered
+{2, 4, 3, 5}
+{3.14, 9.81, 6.63}
+
+print(3+4)
+print(3-4)
+print(3*4)
+print(3%4)
+print(3/4)
+print(3**4)
+print(3//4)
+
+print("Hester")
+print("Tolkien")
+print("England")
+print("I am enjoying this")
+
+print(type(10))
+print(type(9.8))
+print(type(3.14))
+print(type(4 - 4j))
+print(type(["word", "word", "word"]))
+print(type("Hester"))
+print(type("Tolkien"))
+print(type("England"))
+
+distance = ((10-2)**2 + (8-3)**2)**0.5
+print(distance)
+
