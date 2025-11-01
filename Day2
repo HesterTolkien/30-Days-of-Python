@@ -1,0 +1,55 @@
+#Day2 Variables
+
+firstname = "Hester"
+lastname = "Tolkien"
+fullname = "Hester Tolkien"
+country = "England"
+city = "Birmingham"
+age = 17
+year = 2025
+isMarried = False
+isLightOn = False
+
+colour, pet, siblings = "Orange", "Rats", True
+
+print(type(firstname))
+print(type(lastname))
+print(type(fullname))
+print(type(country))
+print(type(city))
+print(type(age))
+print(type(year))
+print(type(isMarried))
+print(type(isLightOn))
+print(type(colour))
+print(type(pet))
+print(type(siblings))
+
+
+print(len(firstname))
+print("Your firstname is ", len(firstname), "characters long whereas your lastname is", len(lastname), "characters long")
+
+numOne = 5
+numTwo = 4
+
+total = numOne + numTwo
+diff = numOne - numTwo
+product = numOne * numTwo
+division = numOne / numTwo
+remainder = numOne % numTwo
+exp = numOne ** numTwo
+floorDivision = numOne // numTwo
+
+area = 3.14 * (30**2)
+circum = 3.14 * (2*30)
+
+radius = int(input("Enter radius: "))
+inpArea = print("Area = ", 3.14 * (radius**2))
+inpCircum = print("Cirumference = ", 3.14 * (2*radius))
+
+firstName = input("What is your firstname? ")
+lastName = input("What is your lastname? ")
+Country = input("What is your country? ")
+Age = int(input("What is your age? "))
+
+help("keywords")
