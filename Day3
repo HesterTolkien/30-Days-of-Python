@@ -1,0 +1,125 @@
+#1
+age = 17
+#2
+height = 1.6
+#3
+complexNum = (1 + 2j)
+
+#4
+b = int(input("Enter a base: "))
+h = int(input("Enter a height: "))
+print("Area = ", b*h/2)
+
+#5
+sideA = int(input("A: "))
+sideB = int(input("B: "))
+sideC = int(input("C: "))
+print("Perimeter = ", sideA + sideB + sideC)
+
+#6
+l = int(input("Length: "))
+w = int(input("Width: "))
+print("Area = ", l*w,". Permimeter = ",2*(l+w),".")
+
+#7
+rad = int(input("Radius: "))
+print("Area = ", 3.14 * (rad**2),". Circumference = ", 3.14 * 2 * rad,".")
+
+#8
+grad1 = 2
+print("y-intercept = ", -2,", x-intercept = ", 1, ", grad = ", 2)
+
+#9
+grad2 = (10-2)/(6-2)
+print("Grad = ",grad2)
+
+#10
+if grad1 > grad2:
+    print("8s gradient is larger")
+elif grad2 > grad1:
+    print("9s gradient is larger")
+else:
+    print("The gradients are the same")
+
+#11
+x = 1
+y = x**2 + 6*x + 9
+while y != 0:
+    x += -1
+    y = x**2 + 6*x + 9
+print("y is 0 when x is", x)
+
+#12
+drag = len("dragon")
+py = len("python")
+if drag > py:
+    print("dragon")
+elif py > drag:
+    print("python")
+else:
+    print("python and dragon")
+
+#13
+if ("on" in "python") and ("on" in "dragon"):
+    print("True")
+else:
+    print("False")
+
+#14
+s = "I hope this course is not full of jargon."
+if "jargon" in s:
+    print("True")
+else:
+    print("False")
+
+#15???
+
+#16
+p = len("python")
+p = float(p)
+p = str(p)
+
+#17
+num = int(input("Number: "))
+if num%2 == 1:
+    print("Odd")
+else:
+    print("Even")
+
+#18
+if 7//3 == int(2.7):
+    print("True")
+else:
+    print("False")
+
+#19
+if type("10") == type(10):
+    print("True")
+else:
+    print("False")
+
+#20
+if int(9.8) == 10:
+    print("True")
+else:
+    print("False")
+
+#21
+hours = float(input("Hours: "))
+rate = float(input("Rate: "))
+print("Earnings: ", hours*rate)
+
+#22
+years = int(input("Years: "))
+print("You have lived ", years*365*24*60*60, "seconds")
+
+#23
+"""
+c = [[1,1,1,1,1],[2,1,2,4,8],[4,1,4,16,64],[5,1,5,25,125]]
+for i in c:
+    c[i] = str(c[i])
+    c[i].replace("[", "")
+    c[i].replace(",", "")
+    c[i].replace("]", "")
+    print(i)
+"""
