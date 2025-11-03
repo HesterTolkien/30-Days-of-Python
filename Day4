@@ -1,0 +1,112 @@
+#36
+a = 8
+b = 6
+print(f"{a} + {b} = {a +b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b:.2f}")
+print(f"{a} % {b} = {a % b}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} ** {b} = {a ** b}")
+
+#35
+radius = 10
+area = 3.14 * radius ** 2
+print("The area of a circle with radius {} is {} meters square.".format(radius, area))
+
+#34
+print("Name\tAge\tCountry\tCity\nHester\t17\tEngland\tBirmingham")
+
+#33
+s = "I am enjoying this challenge.\n I just wonder what is next."
+print(s)
+
+#32
+s = ["Django", "Flask", "Bottle", "Pyramid", "Falcon"]
+print("# ".join(s))
+
+#30
+print("30DaysOfPython".isidentifier())
+#31
+print("thirty_days_of_python".isidentifier())
+
+#29
+s = "   Coding For All   "
+print(s.replace("   ", ""))
+
+#23
+s = "You cannot end a sentence with because because because is a conjunction"
+print(s.find("because"))
+#24
+print(s.rfind("because"))
+#25
+print(s.replace("because", ""))
+
+#14
+s = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Python"
+print(s.split(","))
+
+#12
+s = "Python For Everyone"
+print(s.replace("Everyone", "All"))
+#18
+a = ""
+for i in range(len(s)-1):
+    if s[i].isupper():
+        a += s[i]
+print(a)
+
+#3
+company = "Coding For All"
+#4
+print(company)
+#5
+print(len(company))
+#6
+print(company.upper())
+#7
+print(company.lower())
+#8
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
+#9
+print(company.strip("slice"))
+#10
+print(company.find("Coding"))
+#11
+print(company.replace("Coding", "Python"))
+#13
+print(company.split())
+#15
+print(company[0])
+#16
+print(company[-1])
+#17
+print(company[10])
+#19
+a = ""
+for i in range(len(company)-1):
+    if company[i].isupper():
+        a += company[i]
+print(a)
+#20
+print(company.index("C"))
+#21
+print(company.index("F"))
+#22
+print(company.rfind("l"))
+#28
+print(company.startswith("Coding"))
+#29
+print(company.endswith("coding"))
+
+#2
+s = ["Coding", "For", "All"]
+s = " ".join(s)
+print(s)
+
+#1
+s = ["Thirty", "Days", "Of", "Python"]
+s = " ".join(s)
+print(s)
