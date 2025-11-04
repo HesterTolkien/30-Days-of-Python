@@ -1,0 +1,9 @@
+#2
+five = [1, 2, 3, 4, 5]
+#3
+print(len(five))
+#4
+print(five[0], five[2], five[4])
+
+#1
+lst = []
