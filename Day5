@@ -1,3 +1,29 @@
+#6
+ITCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+#7
+print(ITCompanies)
+#8
+print(len(ITCompanies))
+#9
+print(ITCompanies[0], ITCompanies[((len(ITCompanies)-1)//2)], ITCompanies[len(ITCompanies)-1])
+#10
+ITCompanies[0] = "Github"
+print(ITCompanies)
+#11
+ITCompanies.append("WebHQ")
+print(ITCompanies)
+#12
+ITCompanies.insert((len(ITCompanies)-1)//2, "NetworkIT24")
+print(ITCompanies)
+#13
+ITCompanies[2] = ITCompanies[2].upper()
+print(ITCompanies)
+#14???
+
+
+#5
+mixedDataTypes = ["Hester", 17, 1.6, "Single", "Birmingham"]
+
 #2
 five = [1, 2, 3, 4, 5]
 #3
