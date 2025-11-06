@@ -1,3 +1,37 @@
+#Exercise 2
+
+#1
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+mini = min(ages)
+maxi = max(ages)
+ages.insert(0, mini)
+ages.append(maxi)
+print(ages[(len(ages)+1)//2])
+
+total = 0
+for i in range(len(ages)-1):
+    total += ages[i]
+mean = total/len(ages)
+print(mean)
+
+ran = maxi - mini
+
+
+#================================#
+#Exercise 1
+
+#26
+front = ["HTML", "CSS", "JS", "React", "Redux"]
+back = ["Node", "Express", "MongoDB"]
+devops = front + back
+print(devops)
+#27
+fullstack = devops.copy()
+fullstack.insert(5, "Python")
+fullstack.insert(6, "SQL")
+print(fullstack)
+
 #6
 ITCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
 #7
@@ -19,7 +53,25 @@ print(ITCompanies)
 ITCompanies[2] = ITCompanies[2].upper()
 print(ITCompanies)
 #14???
-
+#15
+print(ITCompanies.index("WebHQ"))
+#16
+print(ITCompanies.sort())
+#or sorted(ITCompanies)
+#17
+print(ITCompanies.sort(reverse=True))
+#or sorted(ITCompanies(reverse=True))
+#18
+del ITCompanies[:3]
+#19
+del ITCompanies[-3:]
+#20
+del ITCompanies[((len(ITCompanies)+1)//2)]
+print(ITCompanies)
+#24
+ITCompanies.clear()
+#25
+del ITCompanies
 
 #5
 mixedDataTypes = ["Hester", 17, 1.6, "Single", "Birmingham"]
@@ -33,3 +85,4 @@ print(five[0], five[2], five[4])
 
 #1
 lst = []
+
