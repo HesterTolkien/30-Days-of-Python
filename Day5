@@ -17,6 +17,9 @@ print(mean)
 
 ran = maxi - mini
 
+upper = abs(maxi - mean)
+lower = abs(mini - mean)
+print(max(upper, lower))
 
 #================================#
 #Exercise 1
