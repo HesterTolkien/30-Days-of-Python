@@ -1,1 +1,43 @@
+#Exercise 1
 
+#2
+brothers = ("Kai", "Eli")
+sisters = ("Ells Bells", "Martian")
+#3
+siblings = brothers + sisters
+#4
+print(len(siblings)-1)
+#5
+family = list(siblings)
+family.append("Helena")
+family.append("Tim")
+
+#1
+tup = ()
+
+#-------------------------#
+
+#Exercise 2
+
+#7
+nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
+print("Estonia" in nordic_countries)
+print("Iceland" in nordic_countries)
+
+#2
+fruits = ("orange", "strawberry", "banana")
+veg = ("carrot", "aubergine", "pepper")
+animalProducts = ("milk", "cheese", "eggs")
+foodTup = fruits + veg + animalProducts
+#3
+foodLst = list(foodTup)
+#4
+first = foodLst[:3]
+#5
+last = foodLst[-3:]
+#6
+del foodTup
+
+#1
+siblings = family[:5]
+parents = family[5:]
