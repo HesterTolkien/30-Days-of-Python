@@ -1,3 +1,18 @@
+#Exercise 3
+
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+
+#1
+agesSet = set(age)
+print(max(len(age), len(agesSet)))
+#3
+s = "I am a teacher and I love to inspire and teach people."
+lst = s.split()
+st = set(lst)
+print(st)
+
+#-------------------------------#
+
 #Exercise 2
 
 A = {19, 22, 24, 20, 25, 26}
