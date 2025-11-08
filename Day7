@@ -1,1 +1,12 @@
+#Exercise 1
 
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+
+#1
+print(len(it_companies))
+#2
+it_companies.add("Twitter")
+#3
+it_companies.update(["One", "Two", "Three"])
+#4
+it_companies.pop()
