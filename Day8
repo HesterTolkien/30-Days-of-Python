@@ -1,1 +1,43 @@
+#1
+dog = {}
+#2
+dog["name"] = "Buster"
+dog["colour"] = "Brown"
+dog["breed"] = "Austrian Shepherd"
+dog["legs"] = 3
+dog["age"] = 4
+print(dog)
 
+#3
+student = {
+    "first" : "Hester",
+    "last" : "Tolkien",
+    "gender" : "Non-binary",
+    "age" : 17,
+    "maritalStatus" : False,
+    "skills" : ["Python", "SQL", "JavaScript", "CSS", "HTML"],
+    "country" : "UK",
+    "address" : {
+        "street" : "shhhhh",
+        "postcode" : "ahh ahh"
+        }
+    }
+#4
+print(len(student))
+#5
+print(type(student["skills"]))
+#6
+student["skills"].append("Java")
+#7
+keys = student.keys()
+print(keys)
+#8
+values = student.values()
+print(values)
+#9
+print(student.items())
+#10
+del student["maritalStatus"]
+print(student)
+#11
+del student
