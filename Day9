@@ -1,1 +1,74 @@
+#Exercise 2
+
+#1
+score = int(input("Score"))
+if score >= 80 and score <=100:
+    print("A")
+elif score >= 70 and score <=79:
+    print("B")
+elif score >= 60 and score <=69:
+    print("C")
+elif score >= 50 and score <= 59:
+    print("D")
+else:
+    print("F")
+
+#2
+month = input("Month: ")
+month = month.lower()
+if month == "march" or month == "april" or month == "may":
+    print("Spring")
+elif month == "june" or month == "july" or month == "august":
+    print("Summer")
+elif month == "september" or month == "october" or month == "november":
+    print("Autumn")
+elif month == "december" or month == "january" or month == "february":
+    print("Winter")
+else:
+    print("Invalid input")
+
+#3
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruit = input("Fruit: ")
+if fruit in fruits == False:
+    fruits.append(fruit)
+else:
+    print("That fruit already exist in the list")
+
+#--------------------------#
+
+#Exercise 1
+
+#1
+age = int(input("Enter your age: "))
+if age >= 17:
+    print("You are old enough to drive")
+else:
+    print("You need ", 17 - age, "years to drive")
+
+#2
+yourAge = int(input("Enter your age: "))
+myAge = 17
+if yourAge > myAge:
+    if yourAge - myAge == 1:     
+        print("You are 1 year older than me")
+    else:
+        print("You are", yourAge - myAge,"years older than me")
+elif yourAge < myAge:
+    if myAge - yourAge == 1:     
+        print("I am 1 year older than you")
+    else:
+        print("I am", myAge - yourAge,"years older than you")
+else:
+    print("We are the same age")
+
+#3
+a = int(input("A: "))
+b = int(input("B: "))
+if a > b:
+    print(a, "is greater than", b)
+elif a < b:
+    print(a, "is less than", b)
+else:
+    print(a, "is equal to", b)
 
