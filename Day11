@@ -1,1 +1,31 @@
+#Excercise 1
 
+#1
+def addTwoNums(num1, num2):
+    total = num1 + num2
+    return total
+print(addTwoNums(3, 5))
+
+#2
+def area(rad):
+    areaCir = 3.14 * rad**2
+    return areaCir
+print(area(5))
+
+#3
+"""
+def addNums(*nums):
+    total = 0
+    for num in nums:
+        if num.isnumeric() == True:
+            total += num
+        else:
+            return "Invalid Type"
+    return total
+print(addNums(4, 2, 6, 1))
+"""
+#4
+def CtoF(c):
+    f = (c * (9/5)) + 32
+    return f
+print(CtoF(20))
