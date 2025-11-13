@@ -29,3 +29,13 @@ def CtoF(c):
     f = (c * (9/5)) + 32
     return f
 print(CtoF(20))
+
+"""
+#7
+def quadratic(a, b, c):
+    sol1 = (-b + (b**2 - 4(a*c))**0.5)/(2*a)
+    sol2 = (-b - (b**2 - 4(a*c))**0.5)/(2*a)
+    return sol, sol2
+print(quadratic(1, 2, 3))
+"""
+
