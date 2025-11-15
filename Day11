@@ -59,3 +59,40 @@ def capital(lst):
         print(i)
 capital(["hello", "bob", "danny"])
 
+#11
+def addItem(lst, newItem):
+    lst.append(newItem)
+    print(lst)
+foodlst = ["Orange", "Banana", "Milk"]
+addItem(foodlst, "Cheese")
+
+#12
+def removeItem(lst, item):
+    lst.remove(item)
+    print(lst)
+foodlst = ["Orange", "Banana", "Milk", "Cheese"]
+removeItem(foodlst, "Cheese")
+
+#13
+def sumNum(num):
+    total = 0
+    for i in range(num + 1):
+        total += i
+    print(total)
+sumNum(5)
+
+#14
+def sumOdd(num):
+    total = 0
+    for i in range(1, num + 1, 2):
+        total += i
+    print(total)
+sumOdd(10)
+
+#15
+def sumEven(num):
+    total = 0
+    for i in range(0, num + 1, 2):
+        total += i
+    print(total)
+sumEven(10)
