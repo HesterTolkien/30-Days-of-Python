@@ -1,3 +1,29 @@
+#Exercise 2
+
+#1
+def evenOrOdd(num):
+    even = 0
+    odd = 0
+    for i in range(num + 1):
+        if i%2 == 0:
+            even += 1
+        else:
+            odd += 1
+    print("Evens:", even, "Odds:", odd)
+evenOrOdd(100)
+
+#2
+def factorial(num):
+    total = 1
+    for i in range(1, num+1):
+        total *= i
+    return total
+total = factorial(5)
+print(total)
+
+
+#------------------------#
+
 #Excercise 1
 
 #1
