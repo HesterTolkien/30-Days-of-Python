@@ -21,6 +21,15 @@ def factorial(num):
 total = factorial(5)
 print(total)
 
+#3
+def isEmpty(inp):
+    if len(inp) > 0:
+        print("Not empty")
+    else:
+        print("Empty")
+isEmpty(" ")
+isEmpty("")
+
 
 #------------------------#
 
@@ -122,3 +131,6 @@ def sumEven(num):
         total += i
     print(total)
 sumEven(10)
+        
+
+
