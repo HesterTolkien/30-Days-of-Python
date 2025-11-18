@@ -1,1 +1,26 @@
+import random
+import string
 
+#Exercise 1
+
+#1
+characters = string.ascii_letters + string.digits
+randomID = "".join(random.choice(characters) for i in range(6))
+print(randomID)
+
+#2
+def userID():
+    length = int(input("How long? "))
+    amount = int(input("How mnay? "))
+    for i in range(amount):
+        randUserID = ""
+        for i in range(length):
+            randUserID += "".join(random.choice(characters))
+        print(randUserID)
+userID()
+
+#3
+def randRGB():
+    RGB = ((random.randint(0, 255)),(random.randint(0, 255)),(random.randint(0, 255)))
+    print(RGB)
+randRGB()
