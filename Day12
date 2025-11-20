@@ -24,3 +24,31 @@ def randRGB():
     RGB = ((random.randint(0, 255)),(random.randint(0, 255)),(random.randint(0, 255)))
     print(RGB)
 randRGB()
+
+#------------------------------------#
+
+#Exercise 2
+
+#1
+def randHexList(repeat):
+    hexy = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"]
+    for i in range(repeat):   
+        hexa = "#"+random.choice(hexy)+random.choice(hexy)+random.choice(hexy)+random.choice(hexy)+random.choice(hexy)+random.choice(hexy)
+        print(hexa)
+randHexList(5)
+
+#2
+def randRGBList(repeat):
+    for i in range(repeat):
+        RGB = ((random.randint(0, 255)),(random.randint(0, 255)),(random.randint(0, 255)))
+        print("rgb",RGB)
+randRGBList(5)
+
+#3
+def genaColours(ty, repeat):
+    if ty == "hexa":
+        randHexList(repeat)
+    else:
+        randRGBList(repeat)
+genaColours("hexa", 5)
+genaColours("rgb", 2)
