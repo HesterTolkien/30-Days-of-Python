@@ -13,3 +13,7 @@ print(flat)
 #3
 blah = [(i,[i**j for j in range(7)]) for i in range(11)]
 print(blah)
+
+#4
+flats = [name for row in names for word in row for name in word]
+print(flats)
