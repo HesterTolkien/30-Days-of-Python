@@ -15,3 +15,39 @@ for i in range(len(names)):
 #6
 for i in range(len(numbers)):
     print(numbers[i])
+
+#------------------------------------#
+
+#Exercise 2
+
+#1
+upperCountries = map(lambda country: country.upper(), countries)
+print(list(upperCountries))
+
+#2
+squares = map(lambda x: x**2, numbers)
+print(list(squares))
+
+#3
+upperNames = map(lambda name: name.upper(), names)
+print(list(upperNames))
+
+#4
+def hasLand(country):
+    if "land" in country:
+        return True
+    else:
+        return False
+
+land = filter(hasLand, countries)
+print(list(land))
+
+#5
+def six(country):
+    if len(country) == 6:
+        return True
+    else:
+        return False
+
+sixChar = filter(six, countries)
+print(list(sixChar))
