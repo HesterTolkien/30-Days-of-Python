@@ -51,3 +51,23 @@ def six(country):
 
 sixChar = filter(six, countries)
 print(list(sixChar))
+
+#6
+def sixPlus(country):
+    if len(country) >= 6:
+        return True
+    else:
+        return False
+
+sixPlusChar = filter(sixPlus, countries)
+print(list(sixPlusChar))
+
+#7
+def E(country):
+    if country.startswith("E"):
+        return False
+    else:
+        return True
+
+EChar = filter(E, countries)
+print(list(EChar))
