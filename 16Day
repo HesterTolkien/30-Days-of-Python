@@ -1,3 +1,29 @@
+from datetime import datetime
+
+#1
+now = datetime.now()
+print(now)
+
+#2
+now1 = now.strftime("%d/%m/%Y, %H:%M:%S")
+print(now1)
+
+#3
+dateStr = "5 December, 2019"
+dObject = datetime.strptime(dateStr, "%d %B, %Y")
+print(dObject)
+
+#4
+newYear = datetime(year = 2026, month = 1, day = 1, hour = 0, minute = 0, second = 0)
+now3 = datetime(year = now.year, month = now.month, day = now.day, hour = now.hour, minute = now.minute, second = now.second)
+print(newYear - now3)
+
+#5
+year1970 = datetime(year = 1970, month = 1, day = 1, hour = 0, minute = 0, second = 0)
+now4 = datetime(year = now.year, month = now.month, day = now.day, hour = now.hour, minute = now.minute, second = now.second)
+print(now4 - year1970)
+
+
 """
 Directive	Description	Example	Try it
 %a	Weekday, short version	Wed	
