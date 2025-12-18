@@ -1,1 +1,44 @@
 
+class PersonAccount():
+    def __init__(self, first, last, income, expense, balance):
+        self.first = first
+        self.last = last
+        self.income = income
+        self.expense = expense
+        self.balance = balance
+
+    def totalInc(self):
+        totalIncome = 0
+        for i in range(len(self.income)):
+            totalIncome += self.income[i]
+        return totalIncome
+            
+    def totalEx(self):
+        totalExpense = 0
+        for i in range(len(self.expense)):
+            totalExpense += self.expense[i]
+        return totalExpense
+    
+    def account(self):
+        pass
+    
+    def addInc(self, x):
+        self.income.append(x)
+
+        return self.income
+        
+    def addEx(self, x):
+        self.expense.append(x)
+
+        return self.expense
+        
+    def balanceFun(self):
+        return self.balance
+
+a = PersonAccount("Hester", "Tolkien", [1,2,3,4,5], [1,2,3,4,5], 450)
+
+print(a.totalInc())
+print(a.totalEx())
+print(a.balanceFun())
+print(a.addInc(6))
+print(a.addEx(6))
